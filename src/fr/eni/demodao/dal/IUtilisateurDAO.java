@@ -5,12 +5,7 @@ import fr.eni.demodao.bo.Utilisateur;
 import java.sql.SQLException;
 import java.util.List;
 
-public interface IUtilisateurDAO {
+public interface IUtilisateurDAO<T, ID> extends IDAO<T, ID> {
 
     Utilisateur login(String email, String mdp) throws Exception;
-    void save(Utilisateur utilisateur);
-    Utilisateur findId();
-    List<Utilisateur> findAll();
-    void update(Utilisateur utilisateur);
-    void delete(Utilisateur utilisateur);
 }

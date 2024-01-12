@@ -6,6 +6,9 @@ import fr.eni.demodao.dal.DAOFactory;
 import fr.eni.demodao.dal.IUtilisateurDAO;
 import fr.eni.demodao.dal.exception.UtilisateurNonTrouveException;
 
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class App {

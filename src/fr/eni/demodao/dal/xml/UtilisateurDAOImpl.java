@@ -5,19 +5,15 @@ import fr.eni.demodao.dal.IUtilisateurDAO;
 
 import java.util.List;
 
-public class UtilisateurDAOImpl implements IUtilisateurDAO {
-    @Override
-    public Utilisateur login(String email, String mdp) {
-        return null;
-    }
+public class UtilisateurDAOImpl implements IUtilisateurDAO<Utilisateur, Integer> {
 
     @Override
-    public void save(Utilisateur utilisateur) {
+    public void save(Utilisateur object) {
 
     }
 
     @Override
-    public Utilisateur findId() {
+    public Utilisateur findById(Integer integer) {
         return null;
     }
 
@@ -27,12 +23,17 @@ public class UtilisateurDAOImpl implements IUtilisateurDAO {
     }
 
     @Override
-    public void update(Utilisateur utilisateur) {
+    public void update(Utilisateur object) {
 
     }
 
     @Override
-    public void delete(Utilisateur utilisateur) {
+    public void delete(Utilisateur object) {
 
+    }
+
+    @Override
+    public Utilisateur login(String email, String mdp) throws Exception {
+        return null;
     }
 }

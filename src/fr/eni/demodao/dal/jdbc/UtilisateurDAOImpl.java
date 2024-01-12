@@ -7,7 +7,7 @@ import fr.eni.demodao.dal.exception.UtilisateurNonTrouveException;
 import java.sql.*;
 import java.util.List;
 
-public class UtilisateurDAOImpl implements IUtilisateurDAO {
+public class UtilisateurDAOImpl implements IUtilisateurDAO<Utilisateur, Integer> {
 
     private static final String LOGIN_QUERY = "SELECT ID, NOM, PRENOM, EMAIL, MDP FROM utilisateur WHERE EMAIL = ? AND MDP = ?";
     @Override
@@ -37,7 +37,7 @@ public class UtilisateurDAOImpl implements IUtilisateurDAO {
     }
 
     @Override
-    public Utilisateur findId() {
+    public Utilisateur findById(Integer integer) {
         return null;
     }
 
